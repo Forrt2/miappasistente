@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tornillo Feliz</title>
+    <style>
+        body{
+            background-color: rgb(235, 255, 255);
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th,td{
+            padding: 20px;
+            text-align: center;
+        }
+        th{
+            background-color: rgb(33, 194, 18);
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Página Del Tornillo Feliz</h1>
+    <p> Esta Página web Cuenta con el asistente Forrt 
+        El cual le ayudara en caso de alguna consulta
+        con el precio y las características del producto
+    </p>
+
+    <table>
+        <tr>
+            <th>Productos</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>TALADROS</td>
+            <td>340</td>
+        </tr>
+        <tr>
+            <td>ATORNILLADORES</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>MARTILLOS</td>
+            <td>32.30</td>
+        </tr>
+        <tr>
+            <td>SERRUCHOS</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>JUEGO DE LLAVES MIXTAS</td>
+            <td>189</td>
+        </tr>
+        <tr>
+            <td>CINTAS METRICAS</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>MAQUINA DE SOLDAR</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>PALAS</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>CARRETILLAS</td>
+            <td>220</td>
+        </tr>
+        <tr>
+            <td>COMBAS</td>
+            <td>106</td>
+        </tr>
+    </table>
+    
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "db93df34-e2d6-4c20-928d-6d403421c469", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "3fbdec81-0f03-4ad5-9102-50d903b2d9f3", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+            (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+            "/WatsonAssistantChatEntry.js"
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
